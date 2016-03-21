@@ -1,0 +1,81 @@
+<resources>
+    <!-- Default app dimen, per the Android Design guidelines. Start -->
+    <!-- 字体大小 -->
+    <dimen name="font_size_micro">12sp</dimen>
+    <dimen name="font_size_small">14sp</dimen>
+    <dimen name="font_size_middle">16sp</dimen>
+    <dimen name="font_size_medium">18sp</dimen>
+    <dimen name="font_size_large">22sp</dimen>
+    <dimen name="font_size_xlarge">24sp</dimen>
+    <dimen name="font_size_huge">36sp</dimen>
+    <!-- 字体大小 -->
+
+    <!-- 组件 -->
+    <dimen name="android_width_huge">240dp</dimen>
+    <dimen name="android_width_xlarge">180dp</dimen>
+    <dimen name="android_width_large">120dp</dimen>
+    <dimen name="android_width_big">60dp</dimen>
+    <dimen name="android_width_middle">48dp</dimen>
+    <dimen name="android_width_normal">32dp</dimen>
+    <dimen name="android_width_small">16dp</dimen>
+
+    <dimen name="android_height_huge">240dp</dimen>
+    <dimen name="android_height_xlarge">180dp</dimen>
+    <dimen name="android_height_large">120dp</dimen>
+    <dimen name="android_height_big">60dp</dimen>
+    <dimen name="android_height_middle">48dp</dimen>
+    <dimen name="android_height_normal">32dp</dimen>
+    <dimen name="android_height_small">16dp</dimen>
+
+    <dimen name="android_margin_huge">48dp</dimen>
+    <dimen name="android_margin_big">24dp</dimen>
+    <dimen name="android_margin_middle">16dp</dimen>
+    <dimen name="android_margin_normal">8dp</dimen>
+    <dimen name="android_margin_micro">4dp</dimen>
+    <dimen name="android_margin_nano">2dp</dimen>
+
+    <dimen name="android_padding_huge">48dp</dimen>
+    <dimen name="android_padding_big">24dp</dimen>
+    <dimen name="android_padding_middle">16dp</dimen>
+    <dimen name="android_padding_normal">8dp</dimen>
+    <dimen name="android_padding_micro">4dp</dimen>
+    <dimen name="android_padding_nano">2dp</dimen>
+    <!-- 组件 -->
+
+    <!-- 其他 -->
+    <dimen name="android_title_height">48dp</dimen>
+
+    <dimen name="android_stroke_width_middle">1dp</dimen>
+    <dimen name="android_stroke_width_normal">1px</dimen>
+
+    <dimen name="android_radiu_middle">4dp</dimen>
+    <dimen name="android_radiu_normal">2dp</dimen>
+
+    <dimen name="android_btn_width">200dp</dimen>
+    <dimen name="android_btn_height">40dp</dimen>
+
+    <dimen name="android_ratingbar_width">30dp</dimen>
+    <dimen name="android_ratingbar_height">30dp</dimen>
+
+    <dimen name="android_edit_width_normal">200dp</dimen>
+    <dimen name="android_edit_height_normal">35dp</dimen>
+    <dimen name="android_edit_width_middle">60dp</dimen>
+    <dimen name="android_edit_height_middle">40dp</dimen>
+
+    <dimen name="android_divider_height_middle">2dp</dimen>
+    <dimen name="android_divider_height_normal">1dp</dimen>
+    <dimen name="android_divider_height_micro">1px</dimen>
+
+    <dimen name="size2">2dp</dimen>
+    <dimen name="size4">4dp</dimen>
+    <dimen name="size8">8dp</dimen>
+    <dimen name="size10">10dp</dimen>
+    <dimen name="size35">35dp</dimen>
+    <dimen name="size50">50dp</dimen>
+    <dimen name="size100">100dp</dimen>
+    <dimen name="size120">120dp</dimen>
+    <dimen name="size200">200dp</dimen>
+    <!-- 其他 -->
+    <!-- Default app dimen, per the Android Design guidelines. End -->
+
+</resources>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">AndroidProductCommon</string>
+
+    <!-- Common -->
+<!--    <string name="action_settings">Settings</string>-->
+    <string name="common_exit_app">再按一次退出程序</string>
+    <string name="common_loading_tips">加载中...</string>
+    <string name="common_no_content">没有数据</string>
+    <string name="common_no_more_date">没有更多数据</string>
+    <string name="common_get_data_fail">获取数据失败</string>
+    <string name="common_url_invalid">地址为空，请重新输入</string>
+    <string name="common_downloading">下载中...</string>
+    <string name="common_reload">重新加载</string>
+    <!-- Common -->
+</resources>

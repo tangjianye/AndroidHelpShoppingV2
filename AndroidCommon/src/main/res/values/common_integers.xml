@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="comm_range_average">1</integer>
+    <integer name="comm_name_txt_leng">4</integer>
+
+    <integer name="anim_rotate_duration">1000</integer>
+    <integer name="anim_shake_duration">1000</integer>
+    <integer name="anim_shake_cycle_num">5</integer>
+    <integer name="anim_activity_duration">300</integer>
+    <integer name="anim_zoom_in_duration">300</integer>
+    <integer name="input_length_micro">4</integer>
+    <integer name="input_length_small">8</integer>
+    <integer name="input_length_medium">20</integer>
+    <integer name="input_length_large">100</integer>
+    <integer name="ratingbar_defaut_rating">4</integer>
+</resources>
