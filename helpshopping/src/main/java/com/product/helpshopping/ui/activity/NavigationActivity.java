@@ -21,6 +21,7 @@ import com.umeng.analytics.MobclickAgent;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
+@Deprecated
 public class NavigationActivity extends HelpBaseActivity
         implements NavigationView.OnNavigationItemSelectedListener {
     private static final String TAG = NavigationActivity.class.getSimpleName();

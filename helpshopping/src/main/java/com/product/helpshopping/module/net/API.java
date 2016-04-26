@@ -14,6 +14,8 @@ public class API {
 
     /**
      * 后台api接口
+     * 列表: http://mask.cloudsdee.com/?/api/shop/get_goods/?category_id=8&page=1
+     * 广告: http://mask.cloudsdee.com/?/api/shop/get_goods/?category_id=7&page=1
      **********************************************************************************************/
     private static final String TEST_MODE = "/masktime0123456789";
 

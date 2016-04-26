@@ -24,6 +24,7 @@ import butterknife.ButterKnife;
 /**
  * Created by Administrator on 2016/4/1 0001.
  */
+@Deprecated
 public class NoteListAdapter extends RecyclerView.Adapter<NoteListAdapter.ViewHolder>
         implements View.OnClickListener, View.OnLongClickListener {
     private Context mContext;

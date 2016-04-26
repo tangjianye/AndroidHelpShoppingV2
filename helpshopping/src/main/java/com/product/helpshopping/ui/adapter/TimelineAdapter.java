@@ -24,6 +24,7 @@ import butterknife.ButterKnife;
 /**
  * Created by Administrator on 2016/3/18 0018.
  */
+@Deprecated
 public class TimelineAdapter extends BaseExpandableListAdapter {
     private Context mContext;
     private LayoutInflater mInflater;

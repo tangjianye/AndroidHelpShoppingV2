@@ -39,6 +39,7 @@ import butterknife.ButterKnife;
  * See the <a href="https://developer.android.com/design/patterns/navigation-drawer.html#Interaction">
  * design guidelines</a> for a complete explanation of the behaviors implemented here.
  */
+@Deprecated
 public class NoteListFragment extends HelpBaseFragment {
     private static final String TAG = NoteListFragment.class.getSimpleName();
     private static final int INIT_COUNT = 5;
