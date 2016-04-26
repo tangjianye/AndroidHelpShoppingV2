@@ -12,5 +12,5 @@
         android:dividerHeight="0dp"
         android:scrollbars="none" />
 
-    <include layout="@layout/layout_empty_text" />
+    <include layout="@layout/content_empty_text" />
 </FrameLayout>

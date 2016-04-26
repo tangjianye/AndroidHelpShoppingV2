@@ -15,7 +15,7 @@
         android:layout_height="match_parent"
         tools:listitem="@layout/listitem_note" />
 
-    <!--    <include layout="@layout/layout_empty_text" />-->
+    <!--    <include layout="@layout/content_empty_text" />-->
 
 </android.support.v4.widget.SwipeRefreshLayout>
 
