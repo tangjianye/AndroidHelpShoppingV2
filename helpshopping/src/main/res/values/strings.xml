@@ -52,4 +52,12 @@
     <string name="dlg_note_detail_content">是否保存日记？</string>
     <string name="title_activity_navigation">NavigationActivity</string>
 
+
+    <!-- MainMaskActivity start -->
+    <string name="label_home">首页</string>
+    <string name="label_category">分类</string>
+    <string name="label_guide">新手引导</string>
+    <string name="label_personal_center">个人中心</string>
+    <!-- MainMaskActivity end -->
+
 </resources>

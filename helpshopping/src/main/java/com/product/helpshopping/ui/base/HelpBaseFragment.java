@@ -35,7 +35,7 @@ public abstract class HelpBaseFragment extends BaseFragment {
         super.onDestroy();
     }
 
-    public HelpBaseActivity getNoteBaseActivity() {
+    public HelpBaseActivity getHelpBaseActivity() {
         return (HelpBaseActivity) getActivity();
     }
 }

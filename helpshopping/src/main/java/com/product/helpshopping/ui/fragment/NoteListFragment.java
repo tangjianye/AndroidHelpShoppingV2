@@ -136,7 +136,7 @@ public class NoteListFragment extends HelpBaseFragment {
                 }
                 if (!mNoteList.isEmpty() && pos < mNoteList.size()) {
                     Note entiy = mNoteList.get(pos);
-                    getNoteBaseActivity().openActivityForResult(AboutActivity.class,
+                    getHelpBaseActivity().openActivityForResult(AboutActivity.class,
                             Constants.COMMON_REQUEST_CODE, CommonUtils.getMaskBundle(entiy));
                 }
             }
@@ -221,7 +221,7 @@ public class NoteListFragment extends HelpBaseFragment {
 //        if (item.getItemId() == R.id.action_add) {
 //            MobclickAgent.onEvent(getActivity(), "click");
 //            MobclickAgent.onEvent(getActivity(), "click", "ActionAdd");
-//            getNoteBaseActivity().openActivityForResult(
+//            getHelpBaseActivity().openActivityForResult(
 //                    AboutActivity.class, Constants.COMMON_REQUEST_CODE, null);
 //            return true;
 //        }

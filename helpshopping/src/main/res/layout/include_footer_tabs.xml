@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/android_padding_normal">
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/selector_tab_home" />
+
+    <TextView
+        android:id="@+id/txt_tab"
+        style="@style/TextAppearance.AppCompat.Body1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="@dimen/android_margin_nano"
+        android:text="@string/label_home"
+        android:textColor="@drawable/selector_tab_textcolor" />
+</LinearLayout>

@@ -9,5 +9,5 @@
         android:layout_height="match_parent"
         android:layout_margin="@dimen/android_margin_middle" />
 
-    <include layout="@layout/content_empty_text" />
+    <include layout="@layout/include_empty_text" />
 </FrameLayout>

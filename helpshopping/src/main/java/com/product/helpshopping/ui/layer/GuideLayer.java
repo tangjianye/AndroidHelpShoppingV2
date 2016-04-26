@@ -15,7 +15,7 @@ import com.product.common.ui.base.BaseActivity;
 import com.product.common.ui.view.ScrollViewPager;
 import com.product.helpshopping.R;
 import com.product.helpshopping.common.interfaces.ICycle;
-import com.product.helpshopping.ui.activity.NavigationActivity;
+import com.product.helpshopping.ui.activity.MainActivity;
 import com.product.helpshopping.ui.activity.SplashActivity;
 
 import java.util.ArrayList;
@@ -184,7 +184,7 @@ public class GuideLayer extends RelativeLayout implements ICycle {
                     @Override
                     public void onClick(View view) {
                         // TODO Auto-generated method stub
-                        ((BaseActivity) mContext).openActivity(NavigationActivity.class);
+                        ((BaseActivity) mContext).openActivity(MainActivity.class);
                         ((SplashActivity) mContext).finish();
                     }
                 });

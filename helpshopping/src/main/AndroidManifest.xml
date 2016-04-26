@@ -37,6 +37,12 @@
             </intent-filter>
         </activity>
         <activity
+            android:name="com.product.helpshopping.ui.activity.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
             android:name=".ui.activity.NavigationActivity"
             android:label="@string/app_name"
             android:launchMode="singleTop"
