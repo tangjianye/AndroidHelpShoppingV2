@@ -10,7 +10,9 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/AndroidCommon" />
-            <option value="$PROJECT_DIR$/helpshopping" />
+            <option value="$PROJECT_DIR$/AndroidDaoGenerator" />
+            <option value="$PROJECT_DIR$/AndroidPullToRefresh" />
+            <option value="$PROJECT_DIR$/colorfulnote" />
           </set>
         </option>
       </GradleProjectSettings>

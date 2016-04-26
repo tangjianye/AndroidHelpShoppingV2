@@ -15,7 +15,7 @@ public class TimeUtils {
     public static final SimpleDateFormat DATE_FORMAT_HH = new SimpleDateFormat("yyyy-MM-dd HH");
     public static final SimpleDateFormat DATE_FORMAT_DAY = new SimpleDateFormat("yyyy-MM-dd");
 
-    public static final SimpleDateFormat DATE_FORMAT_HH_MM_SS = new SimpleDateFormat("HH:mm:ss");
+    public static final SimpleDateFormat DATE_FORMAT_HMS = new SimpleDateFormat("HH:mm:ss");
 
     private TimeUtils() {
         throw new AssertionError();

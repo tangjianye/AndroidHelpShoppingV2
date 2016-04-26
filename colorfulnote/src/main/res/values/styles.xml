@@ -1,0 +1,35 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- toolbar（actionbar）颜色 -->
+        <item name="colorPrimary">@color/blue_100</item>
+        <!-- 状态栏颜色 -->
+        <item name="colorPrimaryDark">@color/blue_200</item>
+        <!-- 导航栏背景色 -->
+        <!--        <item name="navigationBarColor">#3A5FCD</item>-->
+        <!-- 窗口的背景颜色 -->
+        <item name="android:windowBackground">@android:color/white</item>
+        <!--返回键样式-->
+        <!--        <item name="drawerArrowStyle">@style/Widget.AppCompat.DrawerArrowToggle</item>-->
+
+        <item name="@android:windowAnimationStyle">@style/AnimationActivity</item>
+        <!--        <item name="android:textSize">@dimen/font_size_middle</item>-->
+        <item name="android:textColor">@color/grey</item>
+    </style>
+
+    <style name="AppTheme.FullscreenTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AnimationActivity">
+        <item name="android:activityOpenEnterAnimation">@anim/push_left_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/push_static</item>
+        <item name="android:activityCloseEnterAnimation">@anim/push_static</item>
+        <item name="android:activityCloseExitAnimation">@anim/push_right_out</item>
+    </style>
+
+</resources>

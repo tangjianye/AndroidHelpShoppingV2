@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true">
+
+    <include layout="@layout/include_toolbar" />
+
+    <LinearLayout
+        android:id="@+id/ly_box"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/size80"
+        android:layout_marginLeft="@dimen/android_margin_middle"
+        android:layout_marginRight="@dimen/android_margin_middle"
+        android:layout_marginTop="@dimen/android_margin_big"
+        android:background="@color/blue_half_100"
+        android:padding="@dimen/android_padding_middle"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <EditText
+            android:id="@+id/et_content"
+            style="@style/Base.TextAppearance.AppCompat.Body2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="left|top"
+            android:hint="@string/prompt_record_note"
+            android:textColor="@color/black"
+            android:imeOptions="actionDone"
+            android:inputType="textMultiLine"
+            android:singleLine="false"
+            android:textColorHint="@color/grey" />
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>
+

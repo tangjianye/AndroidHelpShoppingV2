@@ -4,8 +4,8 @@
     <integer name="comm_name_txt_leng">4</integer>
 
     <integer name="anim_rotate_duration">1000</integer>
-    <integer name="anim_shake_duration">1000</integer>
-    <integer name="anim_shake_cycle_num">5</integer>
+    <integer name="anim_shake_duration">300</integer>
+    <integer name="anim_shake_cycle_num">4</integer>
     <integer name="anim_activity_duration">300</integer>
     <integer name="anim_zoom_in_duration">300</integer>
     <integer name="input_length_micro">4</integer>

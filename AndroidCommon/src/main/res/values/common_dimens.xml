@@ -70,11 +70,16 @@
     <dimen name="size4">4dp</dimen>
     <dimen name="size8">8dp</dimen>
     <dimen name="size10">10dp</dimen>
+    <dimen name="size30">30dp</dimen>
     <dimen name="size35">35dp</dimen>
     <dimen name="size50">50dp</dimen>
+    <dimen name="size80">80dp</dimen>
     <dimen name="size100">100dp</dimen>
     <dimen name="size120">120dp</dimen>
     <dimen name="size200">200dp</dimen>
+
+    <dimen name="cardview_corner_radius">8dp</dimen>
+    <dimen name="cardview_elevation">4dp</dimen>
     <!-- 其他 -->
     <!-- Default app dimen, per the Android Design guidelines. End -->
 

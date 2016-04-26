@@ -1,0 +1,71 @@
+<resources>
+
+    <!-- Application theme. -->
+    <style name="BaseTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar" />
+
+    <!-- Dialog -->
+    <style name="BaseDailog" parent="@android:style/Theme.Light.NoTitleBar" />
+
+    <style name="AppBaseTheme" parent="BaseTheme">
+        <item name="@android:windowAnimationStyle">@style/AnimationActivity</item>
+        <item name="android:textSize">@dimen/font_size_middle</item>
+        <item name="android:textColor">@color/grey</item>
+    </style>
+
+    <style name="BaseDailog.FullScreenDialog" parent="BaseDailog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">#ff555555</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowSoftInputMode">adjustPan</item>
+    </style>
+
+    <style name="AnimationActivity">
+        <item name="android:activityOpenEnterAnimation">@anim/push_down_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/push_static</item>
+        <item name="android:activityCloseEnterAnimation">@anim/push_static</item>
+        <item name="android:activityCloseExitAnimation">@anim/push_down_out</item>
+    </style>
+
+    <style name="AnimationWindow">
+        <item name="android:windowEnterAnimation">@anim/push_down_in</item>
+        <item name="android:windowExitAnimation">@anim/push_down_out</item>
+    </style>
+
+    <style name="DividerStyle">
+        <item name="android:background">@color/grey</item>
+    </style>
+
+    <style name="DividerStyle.Horizontal" parent="DividerStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/android_divider_height_normal</item>
+    </style>
+
+    <style name="DividerStyle.Vertical" parent="DividerStyle">
+        <item name="android:layout_width">@dimen/android_divider_height_normal</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="ListViewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginLeft">@dimen/android_margin_normal</item>
+        <item name="android:layout_marginRight">@dimen/android_margin_normal</item>
+        <item name="android:layout_marginBottom">@dimen/android_margin_normal</item>
+        <item name="android:layout_marginTop">@dimen/android_margin_normal</item>
+        <item name="android:divider">@android:color/transparent</item>
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+        <!--        <item name="android:dividerHeight">@dimen/android_divider_height_normal</item>-->
+        <item name="android:fadingEdge">none</item>
+        <item name="android:fastScrollEnabled">false</item>
+        <item name="android:footerDividersEnabled">false</item>
+        <item name="android:headerDividersEnabled">false</item>
+        <item name="android:smoothScrollbar">true</item>
+    </style>
+
+</resources>

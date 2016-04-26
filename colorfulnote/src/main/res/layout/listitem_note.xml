@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ly_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    card_view:cardBackgroundColor="#00ff0000"
+    card_view:cardCornerRadius="@dimen/cardview_corner_radius"
+    card_view:cardElevation="@dimen/cardview_elevation"
+    card_view:contentPadding="@dimen/android_padding_normal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_title"
+                android:layout_width="@dimen/android_width_small"
+                android:layout_height="@dimen/android_width_small"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/design_blue_point" />
+
+            <TextView
+                android:id="@+id/txt_title_week"
+                style="@style/TextAppearance.AppCompat.Body2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/android_margin_normal"
+                android:layout_toRightOf="@+id/iv_title"
+                tools:text="星期一" />
+
+            <TextView
+                android:id="@+id/txt_title_date"
+                style="@style/TextAppearance.AppCompat.Body2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                tools:text="20150301" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txt_title_content"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/android_margin_normal"
+            android:maxLines="2"
+            android:minLines="2"
+            tools:text="内容" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

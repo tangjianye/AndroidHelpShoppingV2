@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.product.colorfulnote.ui.layer.GuideLayer xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/in_guide"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.product.common.ui.view.ScrollViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/ll_dot_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:orientation="horizontal" />
+
+    <!--    <Button
+            android:id="@+id/btn_entry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/ll_dot_group"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="50dp"
+            android:text="@string/enter"
+            android:visibility="gone" />-->
+
+</com.product.colorfulnote.ui.layer.GuideLayer>

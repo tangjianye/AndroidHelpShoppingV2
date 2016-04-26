@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true">
+
+    <include layout="@layout/include_toolbar" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/android_margin_middle"
+            android:layout_marginRight="@dimen/android_margin_middle"
+            android:layout_marginTop="@dimen/android_margin_huge"
+            android:orientation="vertical">
+
+<!--            <EditText
+                android:id="@+id/et_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:hint="@string/prompt_record_title"
+                android:inputType="text"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+            <View
+                style="@style/DividerStyle.Horizontal"
+                android:layout_marginTop="@dimen/android_margin_middle" />-->
+
+            <EditText
+                android:id="@+id/et_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/android_margin_middle"
+                android:background="@color/transparent"
+                android:gravity="left|top"
+                android:hint="@string/prompt_record_note"
+                android:inputType="textMultiLine"
+                android:maxLines="12"
+                android:minLines="12"
+                android:singleLine="false" />
+
+<!--            <com.product.colorfulnote.ui.view.ShakeButton
+                android:id="@+id/btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/android_btn_height"
+                android:layout_marginTop="@dimen/size100"
+                android:background="@drawable/selector_btn_blue"
+                android:text="@string/action_submit"
+                android:textColor="@color/white"
+                android:textStyle="bold" />-->
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>
+

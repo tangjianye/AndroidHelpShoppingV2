@@ -1,0 +1,44 @@
+<resources>
+
+    <color name="bg_navigation">#ccc</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="black_100">#555555</color>
+    <color name="black_200">#363636</color>
+
+    <!-- 红橙黄绿青蓝紫 -->
+    <color name="red_half_100">#A0E54646</color>
+    <color name="red_100">#F5A89A</color>
+    <color name="red_200">#E54646</color>
+
+    <!-- 红橙黄绿青蓝紫 -->
+    <color name="orange_half_100">#A0D0770B</color>
+    <color name="orange_100">#F5B16D</color>
+    <color name="orange_200">#D0770B</color>
+
+    <!-- 红橙黄绿青蓝紫 -->
+    <color name="yellow_half_100">#A0F3C246</color>
+    <color name="yellow_100">#FCE0A6</color>
+    <color name="yellow_200">#F3C246</color>
+
+    <!-- 红橙黄绿青蓝紫 -->
+    <color name="green_half_100">#A05BBD2B</color>
+    <color name="green_100">#AFD788</color>
+    <color name="green_200">#5BBD2B</color>
+
+    <!-- 红橙黄绿青蓝紫 -->
+    <color name="grass_half_100">#A0008C5E</color>
+    <color name="grass_100">#67BF7F</color>
+    <color name="grass_200">#008C5E</color>
+
+    <!-- 红橙黄绿青蓝紫 -->
+    <color name="blue_half_100">#A0426EB4</color>
+    <color name="blue_100">#94AAD6</color>
+    <color name="blue_200">#426EB4</color>
+
+    <!-- 红橙黄绿青蓝紫 -->
+    <color name="purple_half_100">#A079378B</color>
+    <color name="purple_100">#AA87B8</color>
+    <color name="purple_200">#79378B</color>
+
+</resources>
