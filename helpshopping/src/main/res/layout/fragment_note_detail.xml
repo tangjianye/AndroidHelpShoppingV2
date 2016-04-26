@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/android_padding_middle"
+    tools:context="com.product.helpshopping.ui.activity.NavigationActivity">
+
+    <LinearLayout
+        android:id="@+id/ly_box"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blue_100">
+
+        <EditText
+            android:id="@+id/et_content"
+            style="@style/Base.TextAppearance.AppCompat.Body2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="left|top"
+            android:hint="@string/prompt_record_note"
+            android:imeOptions="actionDone"
+            android:inputType="textMultiLine"
+            android:padding="@dimen/android_padding_middle"
+            android:singleLine="false" />
+    </LinearLayout>
+</LinearLayout>
+

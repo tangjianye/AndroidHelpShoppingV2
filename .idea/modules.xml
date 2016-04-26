@@ -6,7 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/AndroidDaoGenerator/AndroidDaoGenerator.iml" filepath="$PROJECT_DIR$/AndroidDaoGenerator/AndroidDaoGenerator.iml" />
       <module fileurl="file://$PROJECT_DIR$/AndroidHelpShoppingV2.iml" filepath="$PROJECT_DIR$/AndroidHelpShoppingV2.iml" />
       <module fileurl="file://$PROJECT_DIR$/AndroidPullToRefresh/AndroidPullToRefresh.iml" filepath="$PROJECT_DIR$/AndroidPullToRefresh/AndroidPullToRefresh.iml" />
-      <module fileurl="file://$PROJECT_DIR$/colorfulnote/colorfulnote.iml" filepath="$PROJECT_DIR$/colorfulnote/colorfulnote.iml" />
+      <module fileurl="file://$PROJECT_DIR$/helpshopping/helpshopping.iml" filepath="$PROJECT_DIR$/helpshopping/helpshopping.iml" />
     </modules>
   </component>
 </project>
