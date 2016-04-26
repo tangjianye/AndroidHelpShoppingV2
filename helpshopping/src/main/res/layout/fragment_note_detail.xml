@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="@dimen/android_padding_middle"
-    tools:context="com.product.helpshopping.ui.activity.NavigationActivity">
+    tools:context=".ui.activity.NavigationActivity">
 
     <LinearLayout
         android:id="@+id/ly_box"

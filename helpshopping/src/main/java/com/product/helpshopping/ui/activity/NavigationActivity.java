@@ -11,11 +11,9 @@ import android.view.MenuItem;
 
 import com.product.helpshopping.BaseApplication;
 import com.product.helpshopping.R;
-import com.product.helpshopping.db.gen.Note;
 import com.product.helpshopping.thridpart.push.PushProxy;
 import com.product.helpshopping.ui.base.HelpBaseActivity;
-import com.product.helpshopping.ui.fragment.NoteDetailFragment;
-import com.product.helpshopping.ui.fragment.NoteListV2Fragment;
+import com.product.helpshopping.ui.fragment.NoteListFragment;
 import com.product.helpshopping.ui.helper.ThemeHelper;
 import com.product.helpshopping.utils.CommonUtils;
 import com.umeng.analytics.MobclickAgent;
@@ -74,7 +72,7 @@ public class NavigationActivity extends HelpBaseActivity
 
         if (null == savedInstanceState) {
             getSupportFragmentManager().beginTransaction()
-                    .add(R.id.container, Fragment.instantiate(this, NoteListV2Fragment.class.getName(), null), LIST_FRAGMENT)
+                    .add(R.id.container, Fragment.instantiate(this, NoteListFragment.class.getName(), null), LIST_FRAGMENT)
                     .commit();
         }
     }
@@ -84,37 +82,14 @@ public class NavigationActivity extends HelpBaseActivity
         super.onDestroy();
     }
 
-    public void gotoDetailFragment(Note note) {
-        Fragment fragmentList = getSupportFragmentManager().findFragmentByTag(LIST_FRAGMENT);
-        getSupportFragmentManager().beginTransaction()
-                .setCustomAnimations(R.anim.push_left_in, R.anim.push_left_out, R.anim.push_right_in, R.anim.push_right_out)
-                .hide(fragmentList)
-                .add(R.id.container, NoteDetailFragment.newInstance(note), DETAIL_FRAGMENT)
-                .addToBackStack(null)
-                .commit();
-    }
-
-
-//    private static final long EXIT_INTERVAL = 2000L;
-//    private long mExitTime = 0;
-//
-//    @Override
-//    public void onBackPressed() {
-//        if (mDrawerLayout.isDrawerOpen(GravityCompat.START)) {
-//            mDrawerLayout.closeDrawer(GravityCompat.START);
-//        } else {
-//            if (getSupportFragmentManager().getBackStackEntryCount() == 0) {
-//                if ((System.currentTimeMillis() - mExitTime) > EXIT_INTERVAL) {
-//                    showToast(R.string.common_exit_app);
-//                    mExitTime = System.currentTimeMillis();
-//                } else {
-//                    finish();
-//                    ((BaseApplication) getApplicationContext()).exitApp(true);
-//                }
-//            } else {
-//                super.onBackPressed();
-//            }
-//        }
+//    public void gotoDetailFragment(Note note) {
+//        Fragment fragmentList = getSupportFragmentManager().findFragmentByTag(LIST_FRAGMENT);
+//        getSupportFragmentManager().beginTransaction()
+//                .setCustomAnimations(R.anim.push_left_in, R.anim.push_left_out, R.anim.push_right_in, R.anim.push_right_out)
+//                .hide(fragmentList)
+//                .add(R.id.container, NoteDetailFragment.newInstance(note), DETAIL_FRAGMENT)
+//                .addToBackStack(null)
+//                .commit();
 //    }
 
 

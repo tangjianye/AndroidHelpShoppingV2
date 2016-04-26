@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:padding="@dimen/android_padding_middle"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.product.helpshopping.ui.activity.NavigationActivity"
+    tools:context=".ui.activity.NavigationActivity"
     tools:showIn="@layout/app_bar_navigation">
 
     <android.support.v7.widget.RecyclerView

@@ -3,14 +3,14 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-<!--    <com.handmark.pulltorefresh.library.PullToRefreshListView
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
         android:id="@+id/expandable_listview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="@dimen/android_margin_middle"
         android:divider="@color/transparent"
         android:dividerHeight="0dp"
-        android:scrollbars="none" />-->
+        android:scrollbars="none" />
 
     <include layout="@layout/layout_empty_text" />
 </FrameLayout>

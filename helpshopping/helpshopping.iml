@@ -148,6 +148,7 @@
     <orderEntry type="library" exported="" name="commons-0.8.5.7" level="project" />
     <orderEntry type="library" exported="" name="okhttp-3.2.0" level="project" />
     <orderEntry type="library" exported="" name="analytics-5.6.7" level="project" />
+    <orderEntry type="module" module-name="AndroidPullToRefresh" exported="" />
     <orderEntry type="module" module-name="AndroidDaoGenerator" exported="" />
     <orderEntry type="module" module-name="AndroidCommon" exported="" />
   </component>

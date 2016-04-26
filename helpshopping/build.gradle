@@ -130,4 +130,5 @@ dependencies {
         transitive = true
     }
     compile files('libs/pushservice-4.5.6.87.jar')
+    compile project(':AndroidPullToRefresh')
 }

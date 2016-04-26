@@ -26,8 +26,8 @@
 
     <string name="note_empty_tips">没有日记，赶快点击右上角添加日记吧</string>
 
-    <!-- MainActivity start -->
-    <!-- MainActivity end -->
+    <!-- NavigationActivity start -->
+    <!-- NavigationActivity end -->
 
     <!-- RecordingActivity start -->
     <string name="title_activity_recording">记录</string>

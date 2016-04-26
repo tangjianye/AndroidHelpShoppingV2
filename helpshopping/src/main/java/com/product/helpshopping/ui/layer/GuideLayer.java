@@ -11,12 +11,12 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
-import com.product.helpshopping.R;
-import com.product.helpshopping.common.interfaces.ICycle;
-import com.product.helpshopping.ui.activity.MainActivity;
-import com.product.helpshopping.ui.activity.SplashActivity;
 import com.product.common.ui.base.BaseActivity;
 import com.product.common.ui.view.ScrollViewPager;
+import com.product.helpshopping.R;
+import com.product.helpshopping.common.interfaces.ICycle;
+import com.product.helpshopping.ui.activity.NavigationActivity;
+import com.product.helpshopping.ui.activity.SplashActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -184,7 +184,7 @@ public class GuideLayer extends RelativeLayout implements ICycle {
                     @Override
                     public void onClick(View view) {
                         // TODO Auto-generated method stub
-                        ((BaseActivity) mContext).openActivity(MainActivity.class);
+                        ((BaseActivity) mContext).openActivity(NavigationActivity.class);
                         ((SplashActivity) mContext).finish();
                     }
                 });
