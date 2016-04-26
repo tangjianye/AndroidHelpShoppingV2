@@ -44,7 +44,7 @@ public class Constants {
      */
     public static class Folder {
         // 根目录
-        public static final String ROOT_PATH = "ColorfulNote/";
+        public static final String ROOT_PATH = "HelpShopping/";
     }
 
     /**
