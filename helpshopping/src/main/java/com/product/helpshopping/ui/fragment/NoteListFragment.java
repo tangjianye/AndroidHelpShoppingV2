@@ -5,9 +5,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -76,7 +73,7 @@ public class NoteListFragment extends HelpBaseFragment {
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         // Indicate that this fragment would like to influence the set of actions in the action bar.
-        setHasOptionsMenu(true);
+        // setHasOptionsMenu(true);
     }
 
     @Override
@@ -210,27 +207,27 @@ public class NoteListFragment extends HelpBaseFragment {
         }
     }
 
-    @Override
-    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-        // If the drawer is open, show the global app actions in the action bar. See also
-        // showGlobalContextActionBar, which controls the top-left area of the action bar.
-
-        inflater.inflate(R.menu.menu_add, menu);
-        super.onCreateOptionsMenu(menu, inflater);
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId() == R.id.action_add) {
-            MobclickAgent.onEvent(getActivity(), "click");
-            MobclickAgent.onEvent(getActivity(), "click", "ActionAdd");
-            getNoteBaseActivity().openActivityForResult(
-                    AboutActivity.class, Constants.COMMON_REQUEST_CODE, null);
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
+//    @Override
+//    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+//        // If the drawer is open, show the global app actions in the action bar. See also
+//        // showGlobalContextActionBar, which controls the top-left area of the action bar.
+//
+//        inflater.inflate(R.menu.menu_add, menu);
+//        super.onCreateOptionsMenu(menu, inflater);
+//    }
+//
+//    @Override
+//    public boolean onOptionsItemSelected(MenuItem item) {
+//        if (item.getItemId() == R.id.action_add) {
+//            MobclickAgent.onEvent(getActivity(), "click");
+//            MobclickAgent.onEvent(getActivity(), "click", "ActionAdd");
+//            getNoteBaseActivity().openActivityForResult(
+//                    AboutActivity.class, Constants.COMMON_REQUEST_CODE, null);
+//            return true;
+//        }
+//
+//        return super.onOptionsItemSelected(item);
+//    }
 
     public class NoteAdapter extends ArrayAdapter<Note> {
         private int mResourceId;
