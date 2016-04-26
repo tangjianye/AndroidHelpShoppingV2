@@ -1,4 +1,4 @@
-package com.product.colorfulnote.ui.base;
+package com.product.common.ui.base;
 
 /**
  * Created by Administrator on 2016-4-21.

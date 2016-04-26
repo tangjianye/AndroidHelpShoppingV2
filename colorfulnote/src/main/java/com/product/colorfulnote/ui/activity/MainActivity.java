@@ -13,7 +13,7 @@ import com.product.colorfulnote.BaseApplication;
 import com.product.colorfulnote.R;
 import com.product.colorfulnote.common.Constants;
 import com.product.colorfulnote.thridpart.push.PushProxy;
-import com.product.colorfulnote.ui.base.AppBaseActivity;
+import com.product.colorfulnote.ui.base.NoteBaseActivity;
 import com.product.colorfulnote.ui.fragment.NavigationDrawerV2Fragment;
 import com.product.colorfulnote.ui.fragment.NoteListFragment;
 import com.product.colorfulnote.utils.CommonUtils;
@@ -24,7 +24,7 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 
 @Deprecated
-public class MainActivity extends AppBaseActivity {
+public class MainActivity extends NoteBaseActivity {
     private static final String TAG = MainActivity.class.getSimpleName();
 
     private NavigationDrawerV2Fragment mNavigationDrawerFragment;

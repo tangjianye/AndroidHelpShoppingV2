@@ -14,7 +14,7 @@ import com.product.colorfulnote.R;
 import com.product.colorfulnote.common.interfaces.OnRecyclerViewItemClickListener;
 import com.product.colorfulnote.ui.activity.AboutActivity;
 import com.product.colorfulnote.ui.adapter.NavigationAdapter;
-import com.product.colorfulnote.ui.base.AppBaseFragment;
+import com.product.colorfulnote.ui.base.NoteBaseFragment;
 import com.product.colorfulnote.ui.helper.ThemeHelper;
 import com.product.common.interfaces.IInit;
 import com.umeng.analytics.MobclickAgent;
@@ -30,7 +30,7 @@ import butterknife.ButterKnife;
  * design guidelines</a> for a complete explanation of the behaviors implemented here.
  */
 @Deprecated
-public class NavigationDrawerV2Fragment extends AppBaseFragment implements IInit {
+public class NavigationDrawerV2Fragment extends NoteBaseFragment implements IInit {
     private static final String TAG = NavigationDrawerV2Fragment.class.getSimpleName();
     private ArrayList<String> mDataset;
     private NavigationAdapter mAdapter;
@@ -101,10 +101,10 @@ public class NavigationDrawerV2Fragment extends AppBaseFragment implements IInit
             public void onItemClick(View view, Object obj) {
                 String item = (String) obj;
                 if (getString(R.string.label_nav_upgrade).equals(item)) {
-                    // getAppBaseActivity().showToast(R.string.label_navi_upgrade);
+                    // getNoteBaseActivity().showToast(R.string.label_navi_upgrade);
                 } else if (getString(R.string.label_nav_about).equals(item)) {
-                    // getAppBaseActivity().showToast(R.string.label_navi_about);
-                    getAppBaseActivity().openActivity(AboutActivity.class);
+                    // getNoteBaseActivity().showToast(R.string.label_navi_about);
+                    getNoteBaseActivity().openActivity(AboutActivity.class);
                 }
             }
 

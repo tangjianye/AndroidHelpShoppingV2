@@ -13,7 +13,7 @@ import com.product.colorfulnote.BaseApplication;
 import com.product.colorfulnote.R;
 import com.product.colorfulnote.db.gen.Note;
 import com.product.colorfulnote.thridpart.push.PushProxy;
-import com.product.colorfulnote.ui.base.AppBaseActivity;
+import com.product.colorfulnote.ui.base.NoteBaseActivity;
 import com.product.colorfulnote.ui.fragment.NoteDetailFragment;
 import com.product.colorfulnote.ui.fragment.NoteListV2Fragment;
 import com.product.colorfulnote.ui.helper.ThemeHelper;
@@ -23,7 +23,7 @@ import com.umeng.analytics.MobclickAgent;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
-public class NavigationActivity extends AppBaseActivity
+public class NavigationActivity extends NoteBaseActivity
         implements NavigationView.OnNavigationItemSelectedListener {
     private static final String TAG = NavigationActivity.class.getSimpleName();
     public static final String LIST_FRAGMENT = "ListFragment";

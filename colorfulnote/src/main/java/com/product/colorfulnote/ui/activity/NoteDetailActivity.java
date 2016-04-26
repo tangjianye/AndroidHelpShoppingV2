@@ -11,7 +11,7 @@ import android.widget.LinearLayout;
 import com.product.colorfulnote.R;
 import com.product.colorfulnote.db.DBNoteHelper;
 import com.product.colorfulnote.db.gen.Note;
-import com.product.colorfulnote.ui.base.AppBaseActivity;
+import com.product.colorfulnote.ui.base.NoteBaseActivity;
 import com.product.colorfulnote.ui.helper.ThemeHelper;
 import com.product.colorfulnote.utils.CommonUtils;
 import com.product.common.interfaces.IValid;
@@ -27,7 +27,7 @@ import butterknife.ButterKnife;
  * Created by Administrator on 2016/3/18 0018.
  */
 @Deprecated
-public class NoteDetailActivity extends AppBaseActivity implements IValid {
+public class NoteDetailActivity extends NoteBaseActivity implements IValid {
     private static final String TAG = NoteDetailActivity.class.getSimpleName();
 
     private Note mNote;

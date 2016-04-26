@@ -18,8 +18,8 @@ import com.product.colorfulnote.R;
 import com.product.colorfulnote.common.Constants;
 import com.product.colorfulnote.db.DBNoteHelper;
 import com.product.colorfulnote.db.gen.Note;
-import com.product.colorfulnote.ui.base.AppBaseFragment;
-import com.product.colorfulnote.ui.base.BaseEvent;
+import com.product.colorfulnote.ui.base.NoteBaseFragment;
+import com.product.common.ui.base.BaseEvent;
 import com.product.colorfulnote.ui.helper.ThemeHelper;
 import com.product.common.interfaces.IValid;
 import com.product.common.utils.StringUtils;
@@ -35,7 +35,7 @@ import de.greenrobot.event.EventBus;
 /**
  * Created by Administrator on 2016-4-13.
  */
-public class NoteDetailFragment extends AppBaseFragment implements IValid {
+public class NoteDetailFragment extends NoteBaseFragment implements IValid {
     private static final String TAG = NoteDetailFragment.class.getSimpleName();
 
     private Note mNote;

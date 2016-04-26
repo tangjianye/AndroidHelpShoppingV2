@@ -12,8 +12,8 @@ import com.product.common.ui.base.BaseActivity;
 /**
  * Created by Administrator on 2016/3/14 0014.
  */
-public abstract class AppBaseActivity extends BaseActivity {
-    private static final String TAG = AppBaseActivity.class.getSimpleName();
+public abstract class NoteBaseActivity extends BaseActivity {
+    private static final String TAG = NoteBaseActivity.class.getSimpleName();
     protected Toolbar mToolBar = null;
     private MaterialDialog mLoadingDialog = null;
 

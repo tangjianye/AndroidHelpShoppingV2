@@ -5,14 +5,14 @@ import android.view.ViewStub;
 
 import com.product.colorfulnote.R;
 import com.product.colorfulnote.common.Constants;
-import com.product.colorfulnote.ui.base.AppBaseActivity;
+import com.product.colorfulnote.ui.base.NoteBaseActivity;
 import com.product.colorfulnote.ui.layer.GuideLayer;
 import com.product.colorfulnote.ui.layer.SplashLayer;
 import com.product.common.manager.AppManager;
 import com.product.common.utils.SPUtils;
 import com.umeng.analytics.MobclickAgent;
 
-public class SplashActivity extends AppBaseActivity {
+public class SplashActivity extends NoteBaseActivity {
     private static final String TAG = SplashActivity.class.getSimpleName();
     private SplashLayer mSplashLayer = null;
     private GuideLayer mGuideLayer = null;

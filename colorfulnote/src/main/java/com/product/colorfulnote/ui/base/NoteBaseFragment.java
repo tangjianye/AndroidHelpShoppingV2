@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 import com.product.common.ui.base.BaseFragment;
 
 
-public abstract class AppBaseFragment extends BaseFragment {
+public abstract class NoteBaseFragment extends BaseFragment {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -23,15 +23,11 @@ public abstract class AppBaseFragment extends BaseFragment {
     @Override
     public void onResume() {
         super.onResume();
-//        MobclickAgent.onPageStart(this.getClass().getSimpleName());
-//        MobclickAgent.onResume(getActivity());
     }
 
     @Override
     public void onPause() {
         super.onPause();
-//        MobclickAgent.onPageEnd(this.getClass().getSimpleName());
-//        MobclickAgent.onPause(getActivity());
     }
 
     @Override
@@ -39,7 +35,7 @@ public abstract class AppBaseFragment extends BaseFragment {
         super.onDestroy();
     }
 
-    public AppBaseActivity getAppBaseActivity() {
-        return (AppBaseActivity) getActivity();
+    public NoteBaseActivity getNoteBaseActivity() {
+        return (NoteBaseActivity) getActivity();
     }
 }

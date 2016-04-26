@@ -12,6 +12,7 @@ import com.product.common.R;
  *
  * @author Peng Yi
  */
+@Deprecated
 public class LoadingDialog extends Dialog {
     // private CharSequence mText = null;
 

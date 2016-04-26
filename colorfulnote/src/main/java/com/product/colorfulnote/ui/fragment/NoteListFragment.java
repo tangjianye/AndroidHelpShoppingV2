@@ -1,6 +1,6 @@
 package com.product.colorfulnote.ui.fragment;
 
-import com.product.colorfulnote.ui.base.AppBaseFragment;
+import com.product.colorfulnote.ui.base.NoteBaseFragment;
 
 /**
  * Fragment used for managing interactions for and presentation of a navigation drawer.
@@ -8,7 +8,7 @@ import com.product.colorfulnote.ui.base.AppBaseFragment;
  * design guidelines</a> for a complete explanation of the behaviors implemented here.
  */
 @Deprecated
-public class NoteListFragment extends AppBaseFragment {
+public class NoteListFragment extends NoteBaseFragment {
 //    private static final String TAG = NoteListFragment.class.getSimpleName();
 //    private static final int INIT_COUNT = 5;
 //    private static final int PAGE_COUNT = 5;
@@ -105,7 +105,7 @@ public class NoteListFragment extends AppBaseFragment {
 //                }
 //                if (!mNoteList.isEmpty() && pos < mNoteList.size()) {
 //                    Note entiy = mNoteList.get(pos);
-//                    getAppBaseActivity().openActivityForResult(NoteDetailActivity.class,
+//                    getNoteBaseActivity().openActivityForResult(NoteDetailActivity.class,
 //                            Constants.COMMON_REQUEST_CODE, CommonUtils.getMaskBundle(entiy));
 //                }
 //            }
@@ -190,7 +190,7 @@ public class NoteListFragment extends AppBaseFragment {
 //        if (item.getItemId() == R.id.action_add) {
 //            MobclickAgent.onEvent(getActivity(), "click");
 //            MobclickAgent.onEvent(getActivity(), "click", "ActionAdd");
-//            getAppBaseActivity().openActivityForResult(
+//            getNoteBaseActivity().openActivityForResult(
 //                    NoteDetailActivity.class, Constants.COMMON_REQUEST_CODE, null);
 //            return true;
 //        }

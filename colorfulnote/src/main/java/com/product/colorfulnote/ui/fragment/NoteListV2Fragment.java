@@ -19,8 +19,8 @@ import com.product.colorfulnote.db.DBNoteHelper;
 import com.product.colorfulnote.db.gen.Note;
 import com.product.colorfulnote.ui.activity.NavigationActivity;
 import com.product.colorfulnote.ui.adapter.NoteListAdapter;
-import com.product.colorfulnote.ui.base.AppBaseFragment;
-import com.product.colorfulnote.ui.base.BaseEvent;
+import com.product.colorfulnote.ui.base.NoteBaseFragment;
+import com.product.common.ui.base.BaseEvent;
 import com.product.common.utils.LogUtils;
 import com.umeng.analytics.MobclickAgent;
 
@@ -34,7 +34,7 @@ import de.greenrobot.event.EventBus;
 /**
  * Created by Administrator on 2016-4-13.
  */
-public class NoteListV2Fragment extends AppBaseFragment implements SwipeRefreshLayout.OnRefreshListener {
+public class NoteListV2Fragment extends NoteBaseFragment implements SwipeRefreshLayout.OnRefreshListener {
     private static final String TAG = NoteListV2Fragment.class.getSimpleName();
     private static final int INIT_COUNT = 5;
     private static final int PAGE_COUNT = 5;
@@ -62,7 +62,7 @@ public class NoteListV2Fragment extends AppBaseFragment implements SwipeRefreshL
                 noteGroupBy(mCount);
                 mAdapter.notifyDataSetChanged();
             } else {
-                getAppBaseActivity().showToast(R.string.common_no_more_date);
+                getNoteBaseActivity().showToast(R.string.common_no_more_date);
             }
 
             switch (msg.what) {
@@ -70,7 +70,7 @@ public class NoteListV2Fragment extends AppBaseFragment implements SwipeRefreshL
                     mSwipeRefresh.setRefreshing(false);
                     break;
                 case LOAD_MORE:
-                    getAppBaseActivity().dismissLoadingDialog();
+                    getNoteBaseActivity().dismissLoadingDialog();
                     break;
             }
         }
@@ -113,8 +113,8 @@ public class NoteListV2Fragment extends AppBaseFragment implements SwipeRefreshL
         // TODO Auto-generated method stub
         super.onPause();
         MobclickAgent.onPageEnd(TAG);
-        getAppBaseActivity().dismissLoadingDialog();
-        getAppBaseActivity().cancelToast();
+        getNoteBaseActivity().dismissLoadingDialog();
+        getNoteBaseActivity().cancelToast();
     }
 
     @Override
@@ -146,7 +146,7 @@ public class NoteListV2Fragment extends AppBaseFragment implements SwipeRefreshL
                 if (RecyclerView.SCROLL_STATE_IDLE == newState
                         && (lastVisibleItem + 1) == mAdapter.getItemCount()) {
                     LogUtils.i(TAG, "onScrollStateChanged loadMore");
-                    getAppBaseActivity().showLoadingDialog();
+                    getNoteBaseActivity().showLoadingDialog();
                     loadMore();
                 }
             }

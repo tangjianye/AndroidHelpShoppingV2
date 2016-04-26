@@ -5,7 +5,7 @@ import android.support.design.widget.CollapsingToolbarLayout;
 import android.widget.TextView;
 
 import com.product.colorfulnote.R;
-import com.product.colorfulnote.ui.base.AppBaseActivity;
+import com.product.colorfulnote.ui.base.NoteBaseActivity;
 import com.product.colorfulnote.ui.helper.ThemeHelper;
 import com.umeng.analytics.MobclickAgent;
 
@@ -15,7 +15,7 @@ import butterknife.ButterKnife;
 /**
  * Created by Administrator on 2016/4/1 0001.
  */
-public class AboutActivity extends AppBaseActivity {
+public class AboutActivity extends NoteBaseActivity {
     private static final String TAG = AboutActivity.class.getSimpleName();
 
     @Bind(R.id.toolbar_layout)
