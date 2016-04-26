@@ -15,8 +15,8 @@ import com.facebook.drawee.interfaces.DraweeController;
 import com.facebook.drawee.view.SimpleDraweeView;
 import com.facebook.imagepipeline.request.ImageRequest;
 import com.facebook.imagepipeline.request.ImageRequestBuilder;
-import com.product.helpshopping.R;
 import com.product.common.utils.LogUtils;
+import com.product.helpshopping.R;
 
 
 /**
@@ -49,7 +49,7 @@ public class FrescoManager {
 
     public GenericDraweeHierarchy getDefaultOptions(Context context) {
         GenericDraweeHierarchy options = new GenericDraweeHierarchyBuilder(context.getResources())
-                .setPlaceholderImage(ContextCompat.getDrawable(context, R.drawable.ic_portrait))
+                .setPlaceholderImage(ContextCompat.getDrawable(context, R.drawable.place_holder))
                 .setFailureImage(ContextCompat.getDrawable(context, R.drawable.ic_portrait))
                 .setRoundingParams(RoundingParams.asCircle())
                         // .setProgressBarImage(new ProgressBarDrawable())

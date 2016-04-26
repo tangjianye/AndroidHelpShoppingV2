@@ -1,12 +1,14 @@
 package com.product.helpshopping.ui.fragment;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.widget.CardView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.GridView;
 import android.widget.TextView;
 
 import com.android.volley.Request;
@@ -14,9 +16,11 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.facebook.drawee.view.SimpleDraweeView;
 import com.google.gson.reflect.TypeToken;
+import com.handmark.pulltorefresh.library.PullToRefreshBase;
 import com.handmark.pulltorefresh.library.PullToRefreshGridView;
 import com.product.common.utils.JsonUtils;
 import com.product.common.utils.ResourceUtils;
+import com.product.common.utils.TimeUtils;
 import com.product.helpshopping.BuildConfig;
 import com.product.helpshopping.R;
 import com.product.helpshopping.module.net.VolleyManager;
@@ -38,6 +42,7 @@ import butterknife.ButterKnife;
  */
 public class HomeFragment extends HelpBaseFragment {
     private static final String TAG = HomeFragment.class.getSimpleName();
+    private static final long DELAY = 2000;
 
     private TabHomeAdapter mAdapter;
     private ArrayList<HomeItem> mListData;
@@ -69,15 +74,68 @@ public class HomeFragment extends HelpBaseFragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 //        // return super.onCreateView(inflater, container, savedInstanceState);
-//        TextView view = new TextView(getActivity());
-//        view.setText(com.product.helpshopping.R.string.label_home);
-//        view.setTextSize(20);
-//        view.setTextColor(Color.parseColor("#ff0000"));
+        TextView textView = new TextView(getActivity());
+        textView.setText(com.product.helpshopping.R.string.label_home);
+        textView.setTextSize(20);
+        textView.setTextColor(Color.parseColor("#ff0000"));
+
+
         View view = inflater.inflate(R.layout.fragment_tab_home, container, false);
         ButterKnife.bind(this, view);
 
         mExpandableListview.setAdapter(mAdapter);
+
+       // GridView aaa =  mExpandableListview.getRefreshableView();
+
+        boolean isEmpty = mListData.isEmpty() ? true : false;
+        mTxtEmpty.setVisibility(isEmpty ? View.VISIBLE : View.GONE);
+        mExpandableListview.getRefreshableView().setAdapter(mAdapter);
+
+
+        mExpandableListview.setMode(PullToRefreshBase.Mode.BOTH);
+        mExpandableListview.setOnRefreshListener(new PullToRefreshBase.OnRefreshListener2<GridView>() {
+            @Override
+            public void onPullDownToRefresh(PullToRefreshBase<GridView> refreshView) {
+                mExpandableListview.getLoadingLayoutProxy().setLastUpdatedLabel(
+                        TimeUtils.getCurrentTimeInString(TimeUtils.DATE_FORMAT_MM));
+                pullDown();
+            }
+
+            @Override
+            public void onPullUpToRefresh(PullToRefreshBase<GridView> refreshView) {
+                mExpandableListview.getLoadingLayoutProxy().setLastUpdatedLabel(
+                        TimeUtils.getCurrentTimeInString(TimeUtils.DATE_FORMAT_MM));
+                pullUp();
+            }
+        });
         return view;
+    }
+
+    /**
+     * 快速刷新回调
+     */
+    private void refreshCompleteQuick() {
+        mExpandableListview.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                mExpandableListview.onRefreshComplete();
+            }
+        }, DELAY);
+    }
+
+    private void pullDown() {
+//        mCount = INIT_COUNT;
+//        LogUtils.i(TAG, "pullDown mCount = " + mCount);
+//        noteGroupBy(mCount);
+        mAdapter.notifyDataSetChanged();
+        refreshCompleteQuick();
+    }
+
+    private void pullUp() {
+//        mCount += PAGE_COUNT;
+//        LogUtils.i(TAG, "pullUp mCount = " + mCount);
+//        noteGroupBy(mCount);
+        refreshCompleteQuick();
     }
 
     @Override
